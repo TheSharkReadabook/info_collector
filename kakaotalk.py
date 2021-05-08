@@ -14,7 +14,7 @@ class NumpyArrayEncoder(JSONEncoder):
 def kakaotalk(db_result):
     url = 'https://kapi.kakao.com/v2/api/talk/memo/default/send'
 
-    headers = {"Authorization": "Bearer WmybLHsnxWPWFZgsv5osL3JLrWjZ_9HFKgbbBAo9dJcAAAF5RuxNOw"}
+    headers = {"Authorization": "Bearer <token>"}
 
     post = {
         "object_type": "text",
