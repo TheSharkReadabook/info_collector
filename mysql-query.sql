@@ -4,3 +4,6 @@ CREATE TABLE `news_headlines` (
     `date_time` TIMESTAMP DEFAULT NOW()
 );
 
+SELECT * FROM `news_headlines` A, (SELECT * FROM `news_headlines`
+                                  GROUP BY `title` 
+                                   HAVING COUNT(`title`))
