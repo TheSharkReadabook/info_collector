@@ -77,6 +77,7 @@ beautifulsoup으로 parsing
 weather.py에서 날씨 데이터 불러오는 중
 - ok
 json으로 불러온 데이터 정리 해야 함
+- ok
 
 
 
@@ -88,7 +89,8 @@ https://han-py.tistory.com/233
 [kakao developers error codes]
 https://developers.kakao.com/docs/latest/ko/reference/rest-api-reference#error-code
 https://stackoverflow.com/questions/51770485/typeerror-object-of-type-dataframe-is-not-json-serializable
- 
- 
+
+[TypeError: the JSON object must be str, bytes or bytearray, not dict]
+https://stackoverflow.com/questions/42354001/python-json-object-must-be-str-bytes-or-bytearray-not-dict
 
  
