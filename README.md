@@ -64,17 +64,20 @@ sample data 는 잘 불러왔음
 
 에러 해결 중
 json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0) 
->>> .json() 대신 .text로 함
+- .json() 대신 .text로 함
 
 2021-05-22
 SERVICE_ACCESS_DENIED_ERROR
-key 재발급 함
->>> 요청 URL이 잘못 됐었음
+- key 재발급 함
+- 요청 URL이 잘못 됐었음
 
 beautifulsoup으로 parsing
->>> OK
+- OK
 
 weather.py에서 날씨 데이터 불러오는 중
+- ok
+json으로 불러온 데이터 정리 해야 함
+
 
 
 참고 자료 
