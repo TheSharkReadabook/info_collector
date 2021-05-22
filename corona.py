@@ -8,13 +8,15 @@ import requests
 from keys import *
 
 url = 'http://openapi.data.go.kr/openapi/service/rest/Covid19/getCovid19InfStateJson'
-queryParams = '?' + urlencode({ quote_plus('ServiceKey') : auth_encode_key, quote_plus('pageNo') : '1', quote_plus('numOfRows') : '10', quote_plus('dataType') : 'JSON', quote_plus('dataCd') : 'ASOS', quote_plus('dateCd') : 'DAY', quote_plus('startDt') : '20100101', quote_plus('endDt') : '20100601', quote_plus('stnIds') : '108' })
+queryParams = '?' + urlencode({ quote_plus('ServiceKey') : auth_encode_key, quote_plus('pageNo') : '1', quote_plus('numOfRows') : '10', quote_plus('dataType') : 'XML', quote_plus('dataCd') : 'ASOS', quote_plus('dateCd') : 'DAY', quote_plus('startDt') : '20100101', quote_plus('endDt') : '20100601', quote_plus('stnIds') : '108' })
 
 response = requests.get(url + unquote(queryParams))
 
 soup = BeautifulSoup(response.text, 'html.parser')
 
 data = soup.find_all('item')
+
+print(data)
 
 for item in data:
     createDt = item.find('createdt')
