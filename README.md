@@ -2,7 +2,7 @@
 더 나은 프로그램 만들기 위한 toyPoject
 
 ver1 정보를 스크래핑 하여 카카오톡 나에게 전송하기
-ver2 webapp 에 정보 전송
+ver2 webapp 에 정보 전송(database에 저장)
 
 scrapping.py 
 스크랩핑 항목
