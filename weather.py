@@ -1,15 +1,12 @@
 # 기상청_동네예보 조회서비스
 
-# import urllib.request
-# from urllib.request import urlopen
 from urllib.parse import urlencode, unquote, quote_plus
 import requests
-# import json
 
 import keys as key
 
 
-# 초단기실황조회
+# 동네예보조회
 url = 'http://apis.data.go.kr/1360000/VilageFcstInfoService/getVilageFcst'
 queryParams = '?' + urlencode({quote_plus('ServiceKey'): key.auth_encode_key,
                                quote_plus('pageNo'): '1',
@@ -29,12 +26,12 @@ json_data = response.json().get('response').get('body').get('items')
 # json_data = json.loads(json.dumps(response.json()))
 
 for weat_datas in json_data['item']:
-    print(weat_datas['baseDate'])
-    print(weat_datas['baseTime'])
-    print(weat_datas['category'])
-    print(weat_datas['fcstDate'])
-    print(weat_datas['fcstTime'])
-    print(weat_datas['fcstValue'])
-    print(weat_datas['nx'])
-    print(weat_datas['ny'])
-    print('=========================')
+    print(weat_datas['baseDate'])  # 발표일자
+    print(weat_datas['baseTime'])  # 발표시각
+    print(weat_datas['category'])  # 자료구분코드
+    print(weat_datas['fcstDate'])  # 예보일자
+    print(weat_datas['fcstTime'])  # 예보시각
+    print(weat_datas['fcstValue'])  # 예보 값
+    print(weat_datas['nx'])  # 예보지점 X 좌표
+    print(weat_datas['ny'])  # 예보지점 Y 좌표
+    print('=========================')  # 구분선

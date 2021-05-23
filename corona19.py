@@ -26,8 +26,18 @@ data = soup.find_all('item')
 print(data)
 
 for item in data:
-    createDt = item.find('createdt')
-    decideCnt = item.find('decidecnt')
+    createDt = item.find('createdt')  # 등록일시분초
+    decideCnt = item.find('decidecnt')  # 확진자 수
+    careCnt = item.find('carecnt')  # 치료중 환자 수
+    clearCnt = item.find('clearcnt')  # 격리 해제 수
+    deathCnt = item.find('deathcnt')  # 사망자 수
+    examCnt = item.find('examCnt')  # 검사 진행 수
+    resutlNegCnt = item.find('resutlnegcnt')  # 결과 음성 수
+    stateDt = item.find('statedt')  # 기준일
+    stateTime = item.find('statetime')  # 기준 시간
+    accDefRate = item.find('accdefrate')  # 누적 확진률
+    accExamCnt = item.find('accExamCnt')  # 누적 검사 수
+    accExamCompCnt = item.find('accExamCompCnt')  # 누적 검사 완료 수
 
-print('기준일: '+createDt.text+' 확진자 수: '+decideCnt.text)
+print('등록일시분초: '+createDt.text+' 확진자 수: '+decideCnt.text)
 

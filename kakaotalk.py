@@ -2,7 +2,8 @@ import requests
 import json
 from json import JSONEncoder
 import numpy
-from keys import *
+import keys as key
+
 
 class NumpyArrayEncoder(JSONEncoder):
     def default(self, obj):
@@ -14,7 +15,7 @@ class NumpyArrayEncoder(JSONEncoder):
 def kakaotalk(db_result):
     url = 'https://kapi.kakao.com/v2/api/talk/memo/default/send'
 
-    headers = {"Authorization": "Bearer "+token}
+    headers = {"Authorization": "Bearer "+key.token}
 
     post = {
         "object_type": "text",
