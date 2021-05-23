@@ -81,8 +81,9 @@ json으로 불러온 데이터 정리 해야 함
 
 미세먼지 API 신청함.
 
-weather, corona 더 많은 정보 불러와서 database에 저장하기
-- webapp 사용 용도가 명확하지 않아서 필요한 데이터만 간추리기 어려움
+weather, corona 필요한 정보 불러와서 database에 저장하기
+
+News 세분화 해서 내용까지 요약해서 저장
 
 
 참고 자료 

@@ -12,8 +12,8 @@ connection = pymysql.connect(host='localhost',
 if connection:
     result = 'Mysql connection successed'
 
+
 def db_insert(scp_result):
-                   
     with connection:
         with connection.cursor() as cursor:
             # Create a new record
@@ -26,7 +26,8 @@ def db_insert(scp_result):
         connection.commit()
 
     return 1
-        
+
+
 def db_select():
     with connection.cursor() as cursor:
         # Read a single record
