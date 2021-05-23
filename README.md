@@ -18,8 +18,8 @@ db.py
 mysql-query.sql
  - database query문
 
-corona.py
- - 코로나 관련 정보
+corona19.py
+ - 코로나19 관련 정보
 
 weather.py
  - 날씨 정보
@@ -82,9 +82,9 @@ json으로 불러온 데이터 정리 해야 함
 
 2021-05-23
 dust.py SERVICE_KEY_IS_NOT_REGISTERED_ERROR 에러
-weather, corona 필요한 정보 불러와서 database에 저장하기
 News 세분화 해서 내용까지 요약해서 저장
 
+weather, corona 필요한 정보 불러와서 database에 저장하기
 
 참고 자료 
 

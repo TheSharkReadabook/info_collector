@@ -39,5 +39,7 @@ for item in data:
     accExamCnt = item.find('accExamCnt')  # 누적 검사 수
     accExamCompCnt = item.find('accExamCompCnt')  # 누적 검사 완료 수
 
-print('등록일시분초: '+createDt.text+' 확진자 수: '+decideCnt.text)
+# print('등록일시분초: '+createDt.text+' 확진자 수: '+decideCnt.text)
+
+
 
