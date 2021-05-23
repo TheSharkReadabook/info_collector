@@ -11,7 +11,7 @@ index.py
 kakaotalk.py
  - 나에게 보내기 기능(다른 프로젝트로 이동 예정)
  
-db.py
+database.py
  - scrapping.py에서 정보를 전달 받아 database에 insert
  - 각 *.py에서 데이터들을 받아서 database에 insert하는 기능 추가 예정
  
@@ -82,10 +82,13 @@ json으로 불러온 데이터 정리 해야 함
 
 2021-05-23
 dust.py SERVICE_KEY_IS_NOT_REGISTERED_ERROR 에러
-News 세분화 해서 내용까지 요약해서 저장
 
 weather, corona 필요한 정보 불러와서 database에 저장하기
 
+News 세분화 해서 내용까지 요약해서 저장
+
+
+======================================================
 참고 자료 
 
 [공공데이터(XML, JSON)을 python으로 불러오기_기초]
