@@ -24,10 +24,14 @@ def insert(key, datas):
                                                                                      datas[3], datas[4], datas[5], 
                                                                                      datas[6], datas[7], datas[8], 
                                                                                      datas[9], datas[10], datas[11])
+            elif key == 'weather':
+                sql = 'INSERT INTO `weather` (`baseDate`, `baseTime`, \
+                `category`, `fcstDate`, `fcstTime`, `fcstValue`, \
+                `nx`, `ny`) VALUES ("{}", "{}", "{}", "{}", "{}", "{}", {}, {})'.format(datas[0], datas[1], datas[2], 
+                                                                                        datas[3], datas[4], datas[5], 
+                                                                                        datas[6], datas[7])
             # elif key == 'news':
             #     sql = 
-            # elif key == 'weather':
-            #     sql = 'INSERT INTO '
             cursor.execute(sql)    
             
         connection.commit()

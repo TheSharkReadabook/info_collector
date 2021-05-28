@@ -22,14 +22,14 @@ CREATE TABLE `news_headlines` (
 
 CREATE TABLE `weather`(
     `id` INT(22) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    `baseDate` DATE,  # 발표일자
-    `baseTime` TIME,  # 발표시각
-    `category` CHAR(4),  # 자료구분코드
-    `fcstDate` DATE,  # 예보일자
-    `fcstTime` TIME,  # 예보시각
-    `fcstValue` CHAR(3),  # 예보 값
-    `nx` INT(3),  # 예보지점 X 좌표
-    `ny` INT(3)  # 예보지점 Y 좌표
+    `baseDate` DATE NOT NULL,  # 발표일자
+    `baseTime` TIME NOT NULL,  # 발표시각
+    `category` CHAR(4) NOT NULL,  # 자료구분코드
+    `fcstDate` DATE NOT NULL,  # 예보일자
+    `fcstTime` TIME NOT NULL,  # 예보시각
+    `fcstValue` CHAR(3) NOT NULL,  # 예보 값
+    `nx` INT(3) NOT NULL,  # 예보지점 X 좌표
+    `ny` INT(3) NOT NULL  # 예보지점 Y 좌표
 );
     
 SELECT * FROM `news_headlines` A, (SELECT * FROM `news_headlines`
@@ -42,8 +42,5 @@ VALUES ("2021-05-23 09:37:54.099", "20210523", "00:00", '135929', '8117', '12588
 VALUES ("2021-05-23 09:37:54.099", "20210523", "00:00", 135929, 8117, 125881, 1931, 122235, 9278135, 1.4438928819, 9536299, 9414064)
 
 
-INSERT INTO `corona19`(`createdt`, `statedt`,                `statetime`, `decidecnt`, `carecnt`, `clearcnt`,                `deathcnt`, `examCnt`, `resutlnegcnt`, `accdefrate`,                 `accExamCnt`, `accExamCompCnt`
-)                 VALUES("2021-05-23 09:37:54.099", "20210523", "00:00", 135929, 8117, 125881, 1931, 122235, 9278135, 1.4438928819, 9536299, 9414064)
-
-
+INSERT INTO `weather` (`baseDate`, `baseTime`, `category`, `fcstDate`, `fcstTime`, `fcstValue`, `nx`, `ny`) VALUES ('20210522', '0500', 'POP', '20210528', '1200', '60', 56, 131)
 

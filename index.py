@@ -13,9 +13,13 @@ import weather as weather
 
 # kkot.kakaotalk(db_result['title'].to_json())
 
-corona19 = corona19.corona19()
-print(corona19)
+# corona19 = corona19.corona19()
+# print(corona19)
 
-database.insert('corona19',corona19)
+# database.insert('corona19', corona19)
 
-# weather = weather.weather()
+weather = weather.weather()
+
+database.insert('weather', weather)
+
+# print(weather)
