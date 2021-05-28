@@ -4,7 +4,6 @@ import keys as key
 
 url = 'http://apis.data.go.kr/B552584/ArpltnStatsSvc/getCtprvnMesureSidoLIst'
 queryParams = '?' + urlencode({quote_plus('ServiceKey'): key.auth_encode_key,
-                               quote_plus('serviceKey'): '-',
                                quote_plus('returnType'): 'JSON',
                                quote_plus('numOfRows'): '100',
                                quote_plus('pageNo'): '1',

@@ -81,13 +81,20 @@ json으로 불러온 데이터 정리 해야 함
 
 
 2021-05-23
-dust.py SERVICE_KEY_IS_NOT_REGISTERED_ERROR 에러
-
 weather, corona 필요한 정보 불러와서 database에 저장하기
+- ok
+weather data -> database 작업 중
+- ok 
+
+2021-05-28
+dust.py SERVICE_KEY_IS_NOT_REGISTERED_ERROR 에러
+- ok
+
+dust.py -> air_condition.py
+
+air_condition.py 데이터 정리에서 db에 저장하기
 
 News 세분화 해서 내용까지 요약해서 저장
-
-weather data -> database 작업 중
 
 
 ======================================================
