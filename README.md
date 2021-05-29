@@ -122,4 +122,7 @@ https://stackoverflow.com/questions/42354001/python-json-object-must-be-str-byte
 [python double quotes insert sql]
 https://stackoverflow.com/questions/16370197/inserting-double-quotes-into-mysql-db
 
+[change git repository]
+https://gist.github.com/480/4681b67d2a906db8c6c1321cc678f05f
+
  
