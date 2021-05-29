@@ -1,9 +1,6 @@
 <h1>summary</h1>
 Data들을 Database에 저장하는 프로그램
 
-scraper.py 
- - news.google.com에서 헤드라인을 Scrapping
-
 index.py
  - 프로그램 시작
  
