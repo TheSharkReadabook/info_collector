@@ -31,6 +31,19 @@ CREATE TABLE `weather`(
     `nx` INT(3) NOT NULL,  # 예보지점 X 좌표
     `ny` INT(3) NOT NULL  # 예보지점 Y 좌표
 );
+
+CREATE TABLE `air`(
+    `id` INT(22) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `cityName` VARCHAR(255) NOT NULL,  # 시군구
+    `cityNameEng` VARCHAR(255) NOT NULL,  # 시군구 영어이름
+    `dataTime` TIMESTAMP NOT NULL,  # 측정일시
+    `so2Value` FLOAT(10) NOT NULL,  # 아황산가스 평균농도
+    `coValue` INT(10) NOT NULL,  # 일산화탄소 평균농도
+    `o3Value` FLOAT(10) NOT NULL,  # 오존 평균농도
+    `no2Value` FLOAT(10) NOT NULL,  # 이산화질소 평균농도
+    `pm10Value` INT(10) NOT NULL,  # 미세먼지(pm10) 평균농도
+    `pm25Value` INT(10) NOT NULL  # 초미세먼지(pm2.5) 평균농도
+);
     
 SELECT * FROM `news_headlines` A, (SELECT * FROM `news_headlines`
                                   GROUP BY `title` 
@@ -44,3 +57,4 @@ VALUES ("2021-05-23 09:37:54.099", "20210523", "00:00", 135929, 8117, 125881, 19
 
 INSERT INTO `weather` (`baseDate`, `baseTime`, `category`, `fcstDate`, `fcstTime`, `fcstValue`, `nx`, `ny`) VALUES ('20210522', '0500', 'POP', '20210528', '1200', '60', 56, 131)
 
+INSERT INTO `air` (`cityName`, `cityNameEng`, `dataTime`, `so2Value`, `coValue`, `o3Value`, `no2Value`, `pm10Value`, `pm25Value`) VALUES ('강남구', 'Gangnam-gu', '2021-05-29 15:00', 0.003, 0.3, 0.042, 0.014, 20, 7)

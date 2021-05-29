@@ -24,16 +24,16 @@ def weather():
 
     json_data = response.json().get('response').get('body').get('items')
 
-    for weat_datas in json_data['item']:
-        print(weat_datas['baseDate'])  # 발표일자
-        print(weat_datas['baseTime'])  # 발표시각
-        print(weat_datas['category'])  # 자료구분코드
-        print(weat_datas['fcstDate'])  # 예보일자
-        print(weat_datas['fcstTime'])  # 예보시각
-        print(weat_datas['fcstValue'])  # 예보 값
-        print(weat_datas['nx'])  # 예보지점 X 좌표
-        print(weat_datas['ny'])  # 예보지점 Y 좌표
-        print('=========================')  # 구분선
+    # for weat_datas in json_data['item']:
+    #     print(weat_datas['baseDate'])  # 발표일자
+    #     print(weat_datas['baseTime'])  # 발표시각
+    #     print(weat_datas['category'])  # 자료구분코드
+    #     print(weat_datas['fcstDate'])  # 예보일자
+    #     print(weat_datas['fcstTime'])  # 예보시각
+    #     print(weat_datas['fcstValue'])  # 예보 값
+    #     print(weat_datas['nx'])  # 예보지점 X 좌표
+    #     print(weat_datas['ny'])  # 예보지점 Y 좌표
+    #     print('=========================')  # 구분선
     
     for weat_datas in json_data['item']:
         weather_data.append(weat_datas['baseDate'])
