@@ -9,7 +9,7 @@ import keys as key
 
 def weather():
     weather_data = list()
-    
+
     url = 'http://apis.data.go.kr/1360000/VilageFcstInfoService/getVilageFcst'
     queryParams = '?' + urlencode({quote_plus('ServiceKey'): key.auth_encode_key,
                                    quote_plus('pageNo'): '1',
@@ -34,7 +34,7 @@ def weather():
     #     print(weat_datas['nx'])  # 예보지점 X 좌표
     #     print(weat_datas['ny'])  # 예보지점 Y 좌표
     #     print('=========================')  # 구분선
-    
+
     for weat_datas in json_data['item']:
         weather_data.append(weat_datas['baseDate'])
         weather_data.append(weat_datas['baseTime'])
@@ -44,9 +44,7 @@ def weather():
         weather_data.append(weat_datas['fcstValue'])
         weather_data.append(weat_datas['nx'])
         weather_data.append(weat_datas['ny'])
-        
-    weather_data = np.array(weather_data).reshape(-1, 8)
-    
-        
-    return weather_data
 
+    weather_data = np.array(weather_data).reshape(-1, 8)
+
+    return weather_data

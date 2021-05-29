@@ -14,8 +14,6 @@ import air as air
 
 # kkot.kakaotalk(db_result['title'].to_json())
 
-
-
 # ========= Available Functions ===========
 # corona19 = corona19.corona19()
 
@@ -27,4 +25,7 @@ import air as air
 
 air = air.air()
 
+print(air)
+
+database.insert('air', air)
 

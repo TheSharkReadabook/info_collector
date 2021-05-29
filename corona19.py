@@ -20,7 +20,6 @@ def corona19():
                                    quote_plus('endDt'): '20200315',
                                    quote_plus('stnIds'): '108'})
 
-
     response = requests.get(url + unquote(queryParams))
 
     soup = BeautifulSoup(response.content, 'html.parser')

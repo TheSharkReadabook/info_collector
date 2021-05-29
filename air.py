@@ -5,6 +5,7 @@ import numpy as np
 
 # 시군구별 실시간 평균정보 조회
 
+
 def air():
     air_data = list()
 
@@ -20,6 +21,8 @@ def air():
     response = requests.get(url + unquote(queryParams))
 
     json_data = response.json().get('response').get('body')
+
+    print(json_data)
 
     for datas in json_data['items']:
         air_data.append(datas['cityName'])

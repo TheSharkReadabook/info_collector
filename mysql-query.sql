@@ -37,12 +37,12 @@ CREATE TABLE `air`(
     `cityName` VARCHAR(255) NOT NULL,  # 시군구
     `cityNameEng` VARCHAR(255) NOT NULL,  # 시군구 영어이름
     `dataTime` TIMESTAMP NOT NULL,  # 측정일시
-    `so2Value` FLOAT(10) NOT NULL,  # 아황산가스 평균농도
-    `coValue` INT(10) NOT NULL,  # 일산화탄소 평균농도
-    `o3Value` FLOAT(10) NOT NULL,  # 오존 평균농도
-    `no2Value` FLOAT(10) NOT NULL,  # 이산화질소 평균농도
-    `pm10Value` INT(10) NOT NULL,  # 미세먼지(pm10) 평균농도
-    `pm25Value` INT(10) NOT NULL  # 초미세먼지(pm2.5) 평균농도
+    `so2Value` VARCHAR(10),  # 아황산가스 평균농도
+    `coValue` VARCHAR(10),  # 일산화탄소 평균농도
+    `o3Value` VARCHAR(10),  # 오존 평균농도
+    `no2Value` VARCHAR(10),  # 이산화질소 평균농도
+    `pm10Value` VARCHAR(10),  # 미세먼지(pm10) 평균농도
+    `pm25Value` VARCHAR(10)  # 초미세먼지(pm2.5) 평균농도
 );
     
 SELECT * FROM `news_headlines` A, (SELECT * FROM `news_headlines`
