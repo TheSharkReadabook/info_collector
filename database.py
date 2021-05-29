@@ -1,4 +1,4 @@
-import pymysql.cursors
+import pymysql
 import pandas as pd
 
 
@@ -44,8 +44,15 @@ def insert(key, datas):
                     '.format(datas[i][0], datas[i][1], datas[i][2],
                              datas[i][3], datas[i][4], datas[i][5],
                              datas[i][6], datas[i][7], datas[i][8])
-                    print(sql)
                     cursor.execute(sql)
+            elif key == 'news':
+                for i in range(len(datas)):
+                    # sql = 'INSERT INTO `news` (`title`, `url`) \
+                    # VALUES ("{}", "{}") \
+                    # '.format(datas[i][0], datas[i][1])
+                    sql = 'INSERT INTO `news` (`title`, `url`) \
+                    VALUES (%s, %s)'
+                    cursor.execute(sql, (datas[i][0], datas[i][1]))
         connection.commit()
 
 # scrapping data insert

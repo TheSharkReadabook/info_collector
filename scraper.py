@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 
 
-def scrapping():
+def scraper():
 
     selector = '#yDmH0d > c-wiz > div > div.FVeGwb.CVnAc.Haq2Hf.bWfURe > div.ajwQHc.BL5WZb.RELBvb.zLBZs > div > main > c-wiz > div.lBwEZb.BL5WZb.xP6mwf > div > div > div > article > h3 > a'
     headlines = []

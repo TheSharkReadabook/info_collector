@@ -1,7 +1,7 @@
-CREATE TABLE `news_headlines` (
+CREATE TABLE `news` (
     `id` INT(22) NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `title` VARCHAR(256) NOT NULL,
-    `date_time` TIMESTAMP DEFAULT NOW()
+    `url` VARCHAR(256) NOT NULL
 );
 
  CREATE TABLE `corona19` (
@@ -45,11 +45,6 @@ CREATE TABLE `air`(
     `pm25Value` VARCHAR(10) NOT NULL  # 초미세먼지(pm2.5) 평균농도
 );
     
-SELECT * FROM `news_headlines` A, (SELECT * FROM `news_headlines`
-                                  GROUP BY `title` 
-                                   HAVING COUNT(`title`))
-                                   
-                                   
 INSERT INTO `corona19`(`createdt`, `statedt`, `statetime`, `decidecnt`, `carecnt`, `clearcnt`, `deathcnt`, `examCnt`, `resutlnegcnt`, `accdefrate`, `accExamCnt`, `accExamCompCnt`) 
 VALUES ("2021-05-23 09:37:54.099", "20210523", "00:00", '135929', '8117', '125881', '1931', '122235', '9278135', '1.4438928819', '9536299', '9414064')
 VALUES ("2021-05-23 09:37:54.099", "20210523", "00:00", 135929, 8117, 125881, 1931, 122235, 9278135, 1.4438928819, 9536299, 9414064)
@@ -58,3 +53,5 @@ VALUES ("2021-05-23 09:37:54.099", "20210523", "00:00", 135929, 8117, 125881, 19
 INSERT INTO `weather` (`baseDate`, `baseTime`, `category`, `fcstDate`, `fcstTime`, `fcstValue`, `nx`, `ny`) VALUES ('20210522', '0500', 'POP', '20210528', '1200', '60', 56, 131)
 
 INSERT INTO `air` (`cityName`, `cityNameEng`, `dataTime`, `so2Value`, `coValue`, `o3Value`, `no2Value`, `pm10Value`, `pm25Value`) VALUES ('강남구', 'Gangnam-gu', '2021-05-29 15:00', 0.003, 0.3, 0.042, 0.014, 20, 7)
+
+INSERT INTO `news` (`title`, `url`) VALUES ('TEST', 'TEST')

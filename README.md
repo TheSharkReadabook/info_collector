@@ -1,19 +1,17 @@
 <h1>summary</h1>
-Data들을 Scrapping 하거나 API로 불러와서 Database에 저장하는 프로그램
-각 
+Data들을 Database에 저장하는 프로그램
 
-scrapping.py 
- - news.google.com에서 헤드라인을 Scrapping 하여 Database에 저장
+scraper.py 
+ - news.google.com에서 헤드라인을 Scrapping
 
 index.py
- - 프로그램 시작점
+ - 프로그램 시작
  
 kakaotalk.py
  - 나에게 보내기 기능(다른 프로젝트로 이동 예정)
  
 database.py
- - scrapping.py에서 정보를 전달 받아 database에 insert
- - 각 *.py에서 데이터들을 받아서 database에 insert하는 기능 추가 예정
+ - 각 *.py에서 데이터들을 받아서 database에 insert
  
 mysql-query.sql
  - database query문
@@ -25,7 +23,14 @@ weather.py
  - 날씨 정보
 
 keys.py
- - API 사용을 위한 Key값들 저장
+ - API 사용을 위한 Key값들 저장 git에 push 하지 않음
+ 
+air.py
+ - 대기정보
+ 
+news.py
+ - 뉴스 헤드라인
+ 
 
 
 <h3>개발 일지</h3>
@@ -98,9 +103,10 @@ air_condition.py 데이터 정리에서 db에 저장하기
 2021-05-29
 air_condition.py -> air.py로 변경
 
-air.py '서대문구', pm25 데이터가 공백임. 이유는 모름 에러 발생 -> string으로 처리
+air.py '서대문구', pm25 데이터가 공백임. insert할 떄 Error 발생 -> string으로 처리
 
-News 세분화 해서 내용까지 요약해서 저장
+Headline News 가져와서 DataBase에 저장
+- ok
 
 
 ======================================================
@@ -115,5 +121,8 @@ https://stackoverflow.com/questions/51770485/typeerror-object-of-type-dataframe-
 
 [TypeError: the JSON object must be str, bytes or bytearray, not dict]
 https://stackoverflow.com/questions/42354001/python-json-object-must-be-str-bytes-or-bytearray-not-dict
+
+[python double quotes insert sql]
+https://stackoverflow.com/questions/16370197/inserting-double-quotes-into-mysql-db
 
  
