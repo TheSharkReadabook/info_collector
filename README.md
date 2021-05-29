@@ -93,13 +93,15 @@ dust.py SERVICE_KEY_IS_NOT_REGISTERED_ERROR 에러
 dust.py -> air_condition.py로 변경
 
 air_condition.py 데이터 정리에서 db에 저장하기
-
-News 세분화 해서 내용까지 요약해서 저장
+- ok
 
 2021-05-29
 air_condition.py -> air.py로 변경
 
-air.py '서대문구', pm25 데이터가 공백임. 이유는 모름 에러 발생
+air.py '서대문구', pm25 데이터가 공백임. 이유는 모름 에러 발생 -> string으로 처리
+
+News 세분화 해서 내용까지 요약해서 저장
+
 
 ======================================================
 참고 자료 

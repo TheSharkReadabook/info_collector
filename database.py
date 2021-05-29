@@ -40,7 +40,7 @@ def insert(key, datas):
                     sql = 'INSERT INTO `air` (`cityName`, `cityNameEng`, \
                     `dataTime`, `so2Value`, `coValue`, `o3Value`, `no2Value`,\
                     `pm10Value`, `pm25Value`) \
-                    VALUES ("{}", "{}", "{}", {}, {}, {}, {}, {}, {}) \
+                    VALUES ("{}", "{}", "{}", "{}", "{}", "{}", "{}", "{}", "{}") \
                     '.format(datas[i][0], datas[i][1], datas[i][2],
                              datas[i][3], datas[i][4], datas[i][5],
                              datas[i][6], datas[i][7], datas[i][8])
