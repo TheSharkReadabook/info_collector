@@ -22,8 +22,6 @@ def air():
 
     json_data = response.json().get('response').get('body')
 
-    print(json_data)
-
     for datas in json_data['items']:
         air_data.append(datas['cityName'])
         air_data.append(datas['cityNameEng'])

@@ -17,8 +17,11 @@ def news():
 
     for datas in json_data['articles']:
         news_data.append(datas['title'])
+        news_data.append(datas['description'])
         news_data.append(datas['url'])
+        news_data.append(datas['urlToImage'])
 
-    news_data = np.array(news_data).reshape(int(len(news_data) / 2), 2)
+    # 20행 4열의 2차원 배열로 변환
+    news_data = np.array(news_data).reshape(int(len(news_data) / 4), 4)
 
     return news_data

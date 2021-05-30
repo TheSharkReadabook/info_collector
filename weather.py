@@ -15,7 +15,7 @@ def weather():
                                    quote_plus('pageNo'): '1',
                                    quote_plus('numOfRows'): '10',
                                    quote_plus('dataType'): 'JSON',
-                                   quote_plus('base_date'): '20210528',
+                                   quote_plus('base_date'): '20210530',
                                    quote_plus('base_time'): '0500',
                                    quote_plus('nx'): '56',
                                    quote_plus('ny'): '131'})
