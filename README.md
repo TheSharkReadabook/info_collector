@@ -1,11 +1,23 @@
 <h1>summary</h1>
-Data들을 Database에 저장하는 프로그램
 
+출퇴근 시간 등에 필요한 정보(뉴스 등)를 빠르고 쉽게 알 수 있게 한다
+1. 카카오톡으로 정보 전송
+2. 웹 페이지에 불러와서 다시 볼 수 있음
+
+info_collector
+Data들을 Scrapping 하거나 API로 불러와서 Database에 저장하는 프로그램
+
+webapp/infoweb
+info_collector에서 Database에 Insert한 정보를 Web에 보기 좋게 불러옴
+
+kkot
+Database에서 Data를 불러와서 Kakaotalk 메신저로 보냄
+
+AWS, GCP, Docker, Kubernetes에서 운영 예정
+
+./info_collector
 index.py
  - 프로그램 시작
- 
-kakaotalk.py
- - 나에게 보내기 기능(다른 프로젝트로 이동 예정)
  
 database.py
  - 각 *.py에서 데이터들을 받아서 database에 insert
@@ -27,6 +39,10 @@ air.py
  
 news.py
  - 뉴스 헤드라인
+ 
+ 
+./kkot
+database에 Select 해서 카카오톡으로 전송
  
 
 
@@ -106,7 +122,12 @@ Headline News 가져와서 DataBase에 저장
 - ok
 
 2021-05-30
-weather.py에 날자 자동으로 변경해야됨
+weather.py에 날자 자동으로 변경해야됨 
+- ok
+
+kkot 만듬(프로젝트 합침)
+
+
 
 ======================================================
 참고 자료 
@@ -127,4 +148,5 @@ https://stackoverflow.com/questions/16370197/inserting-double-quotes-into-mysql-
 [change git repository]
 https://gist.github.com/480/4681b67d2a906db8c6c1321cc678f05f
 
- 
+[소프트웨어 설계 - 공동 모듈 설계]
+https://velog.io/@kjh03160/1-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%84%A4%EA%B3%84-3.-%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EC%84%A4%EA%B3%84-1-%EA%B3%B5%ED%86%B5-%EB%AA%A8%EB%93%88-%EC%84%A4%EA%B3%84

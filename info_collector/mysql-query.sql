@@ -29,7 +29,7 @@ CREATE TABLE `weather`(
     `category` CHAR(4) NOT NULL,  # 자료구분코드
     `fcstDate` DATE NOT NULL,  # 예보일자
     `fcstTime` TIME NOT NULL,  # 예보시각
-    `fcstValue` CHAR(3) NOT NULL,  # 예보 값
+    `fcstValue` CHAR(5) NOT NULL,  # 예보 값
     `nx` INT(3) NOT NULL,  # 예보지점 X 좌표
     `ny` INT(3) NOT NULL  # 예보지점 Y 좌표
 );
