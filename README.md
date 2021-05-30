@@ -15,7 +15,7 @@ Database에서 Data를 불러와서 Kakaotalk 메신저로 보냄
 
 AWS, GCP, Docker, Kubernetes에서 운영 예정
 
-./info_collector
+<h3>./info_collector</h3>
 index.py
  - 프로그램 시작
  
@@ -40,12 +40,13 @@ air.py
 news.py
  - 뉴스 헤드라인
  
- 
-./kkot
+<h3>./kkot</h3>
 database에 Select 해서 카카오톡으로 전송
  
+<h3>./webapp</h3>
+server 실행 코드 0.0.0.0은 외부접속 허용 python manage.py runserver 0.0.0.0:80
 
-
+ 
 <h3>개발 일지</h3>
 
 2021-05-03
@@ -59,7 +60,8 @@ python to Database connect success
 캡슐화 작업 하기
 
 2021-05-04
-index에서 db로 스크래핑 데이터 전송 작업 하기 - ok
+index에서 db로 스크래핑 데이터 전송 작업 하기 
+- ok
 
 2021-05-05
 email 대신 kakaotalk으로 대체함
@@ -69,7 +71,8 @@ error 해결 핸드폰 받으면 카톡 왔는지 확인하기 현재 시각 202
 error 카카오톡 개발자 페이지에서 계정 로그인활성화 해야 됨
  
 2021-05-06
-스크래핑 항목 카카오톡 나에게 보내기 - ok
+스크래핑 항목 카카오톡 나에게 보내기 
+- ok
 스크래핑 데이터들 보내기 
 
 2021-05-07
@@ -88,15 +91,12 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 SERVICE_ACCESS_DENIED_ERROR
 - key 재발급 함
 - 요청 URL이 잘못 됐었음
-
 beautifulsoup으로 parsing
 - OK
-
 weather.py에서 날씨 데이터 불러오는 중
 - ok
 json으로 불러온 데이터 정리 해야 함
 - ok
-
 
 2021-05-23
 weather, corona 필요한 정보 불러와서 database에 저장하기
@@ -107,25 +107,22 @@ weather data -> database 작업 중
 2021-05-28
 dust.py SERVICE_KEY_IS_NOT_REGISTERED_ERROR 에러
 - ok
-
 dust.py -> air_condition.py로 변경
-
 air_condition.py 데이터 정리에서 db에 저장하기
 - ok
 
 2021-05-29
 air_condition.py -> air.py로 변경
-
 air.py '서대문구', pm25 데이터가 공백임. insert할 떄 Error 발생 -> string으로 처리
-
 Headline News 가져와서 DataBase에 저장
 - ok
 
 2021-05-30
 weather.py에 날자 자동으로 변경해야됨 
 - ok
-
 kkot 만듬(프로젝트 합침)
+
+django webapp 만들기
 
 
 
