@@ -43,7 +43,6 @@ def weather():
         weather_data.append(weat_datas['fcstDate'])
         weather_data.append(weat_datas['fcstTime'])
         weather_data.append(weat_datas['fcstValue'])
-        print(weat_datas['fcstValue'])
         weather_data.append(weat_datas['nx'])
         weather_data.append(weat_datas['ny'])
 
