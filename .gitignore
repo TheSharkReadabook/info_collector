@@ -137,5 +137,5 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
-# api keys
+# api keys/secret keys
 keys.py

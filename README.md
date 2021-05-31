@@ -121,9 +121,14 @@ Headline News 가져와서 DataBase에 저장
 weather.py에 날자 자동으로 변경해야됨 
 - ok
 kkot 만듬(프로젝트 합침)
+- ok
 
-django webapp 만들기
+django project만듬 mysql에 있는 데이터 news.html로 불러오는 중
+emplateDoesNotExist 에러 발생
+- ok
 
+api data들 django에 불러옴
+디자인만 하면 됨
 
 
 ======================================================

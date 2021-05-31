@@ -1,0 +1,74 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'infoweb/style.css' %}">
+
+<div>
+	<h1>
+		news
+	</h1>
+{% for news in news %}
+	<div>
+		<a href={{ news.url }}>
+			<h4>
+				{{ news.title }}
+			</h4>
+			<h6>
+				{{ news.description }}
+			</h6>
+		</a>
+	</div>
+</div>
+{% endfor %}	
+
+
+<h1>
+	air
+</h1>
+
+{% for air in air %}
+<div>
+	{{ air.cityname }}	
+</div>
+<div>
+	{{ air.pm10value }}
+</div>
+<div>
+	{{ air.pm25value }}
+</div>
+
+{% endfor %}
+
+
+
+{% for datas in corona19 %}
+
+
+{% endfor %}
+
+
+{% for datas in weather %}
+
+
+{% endfor %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
