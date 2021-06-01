@@ -127,11 +127,18 @@ django project만듬 mysql에 있는 데이터 news.html로 불러오는 중
 emplateDoesNotExist 에러 발생
 - ok
 
+
+2021-05-31
 api data들 django에 불러옴
 디자인만 하면 됨
 
-news 내용 scrap해서 요약
+MYSQL news TABLE description Column Type changed to TEXT and NULL -> YES 
 
+No module named ‘gensim.summarization’
+https://discuss.streamlit.io/t/no-module-named-gensim-summarization/11780/1
+- gensim 3.8.3으로 설치함
+
+news.py는 newspaper 모듈로 내용 scrap해서 gensim으로 요약하고 return
 
 ======================================================
 참고 자료 

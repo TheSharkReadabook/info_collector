@@ -1,9 +1,9 @@
 CREATE TABLE `news` (
     `id` INT(22) NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `title` VARCHAR(256) NOT NULL,
-    `description` VARCHAR(256) NOT NULL,
+    `description` TEXT,
     `url` VARCHAR(256) NOT NULL,
-    `urlToImage` VARCHAR(256) NOT NULL
+    `urlToImage` VARCHAR(256)
 );
 
  CREATE TABLE `corona19` (
