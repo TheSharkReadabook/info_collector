@@ -3,7 +3,8 @@ CREATE TABLE `news` (
     `title` VARCHAR(256) NOT NULL,
     `description` TEXT,
     `url` VARCHAR(256) NOT NULL,
-    `urlToImage` VARCHAR(256)
+    `urlToImage` VARCHAR(256),
+    `content` TEXT NOT NULL
 );
 
  CREATE TABLE `corona19` (

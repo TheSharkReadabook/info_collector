@@ -48,7 +48,7 @@ def insert(key, datas):
                 # VALUES ("{}", "{}") \
                 # '.format(datas[i][0], datas[i][1])
                 sql = 'INSERT INTO `news` (`title`, `description`, `url`, \
-                `urlToImage`) VALUES (%s, %s, %s, %s)'
+                `urlToImage`, `content`) VALUES (%s, %s, %s, %s, %s)'
                 cursor.execute(sql, (datas[i][0], datas[i][1], datas[i][2],
-                                     datas[i][3]))
+                                     datas[i][3], datas[i][4]))
     connection.commit()
