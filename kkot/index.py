@@ -4,4 +4,3 @@ import kakaotalk as kakaotalk
 result = selector.selector()
 
 kakaotalk.kakaotalk(result)
-

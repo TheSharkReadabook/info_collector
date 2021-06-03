@@ -15,10 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from infoweb import views
+# from infoweb import views
 
 urlpatterns = [
     path('infoweb/', include('infoweb.urls')),
-    path('admin/', admin.site.urls),
-    path('news/', views.news_view),
+    # path('admin/', admin.site.urls),
 ]

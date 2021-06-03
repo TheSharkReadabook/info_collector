@@ -138,10 +138,17 @@ No module named ‘gensim.summarization’
 https://discuss.streamlit.io/t/no-module-named-gensim-summarization/11780/1
 - gensim 3.8.3으로 설치함
 
+2021-06-03
 news.py는 newspaper 모듈로 내용 scrap해서 gensim으로 요약하고 return
+- ok
+
+web design은 bootstrap등을 활용해서 디자인 시간 최소화 하기
+kakao oven에 디자인 프로토타입 만듬
+
+
 
 ======================================================
-참고 자료 
+참고 자료
 
 [공공데이터(XML, JSON)을 python으로 불러오기_기초]
 https://han-py.tistory.com/233

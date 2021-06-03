@@ -16,8 +16,3 @@ def index(request):
         'weather': weather,
     }
     return render(request, 'infoweb/index.html', context)
-
-# view test
-def news_view(request):    
-    news = News.objects.all()
-    return render(request, 'infoweb/news.html', {'news': news, })
