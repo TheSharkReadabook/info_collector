@@ -1,4 +1,3 @@
-# 뉴스 본문을 추출하여 정제한 후 내용 요약하여 list로 return
 import re
 import keys as key
 import requests
