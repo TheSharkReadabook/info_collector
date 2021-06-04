@@ -49,6 +49,8 @@ class News(models.Model):
     description = models.CharField(max_length=256)
     url = models.CharField(max_length=256)
     urltoimage = models.CharField(db_column='urlToImage', max_length=256, blank=True, null=True)  # Field name made lowercase.
+    content = models.CharField(max_length=256)
+    date = models.DateTimeField()
 
     class Meta:
         managed = False

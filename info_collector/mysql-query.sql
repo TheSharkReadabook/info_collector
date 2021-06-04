@@ -4,7 +4,8 @@ CREATE TABLE `news` (
     `description` TEXT,
     `url` VARCHAR(256) NOT NULL,
     `urlToImage` VARCHAR(256),
-    `content` TEXT NOT NULL
+    `content` TEXT NOT NULL,
+    `date` DATE
 );
 
  CREATE TABLE `corona19` (

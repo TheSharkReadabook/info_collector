@@ -2,7 +2,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import *
 
-
 # Create your views here.
 def index(request):
     air = Air.objects.all()
@@ -15,4 +14,5 @@ def index(request):
         'news': news,
         'weather': weather,
     }
+    
     return render(request, 'infoweb/index.html', context)

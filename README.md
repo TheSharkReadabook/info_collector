@@ -145,7 +145,25 @@ news.py는 newspaper 모듈로 내용 scrap해서 gensim으로 요약하고 retu
 web design은 bootstrap등을 활용해서 디자인 시간 최소화 하기
 kakao oven에 디자인 프로토타입 만듬
 
+2020-06-04
+index.html
+news.title, news.content 불러옴
 
+
+corona19 일일 확진자는 (오늘 확진자 수 - 어제 확진자 수)
+
+news에 날짜도 올리기
+- ok
+
+weather, air는 지역별로, fcstvalue 확인하여 띄어줘야 함
+views.py에서 날짜 선택해서 쿼리할 수 있음
+
+데이터들은 최근 24시간 내 데이터만 올리도록 하고 중복 되지 않게 하기
+
+======================================================
+[refactoring]
+
+SQL문 NOT NULL로 수정하고 NONE(NULL) 데이터는 Try - except 예외처리하기
 
 ======================================================
 참고 자료

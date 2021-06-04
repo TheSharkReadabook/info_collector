@@ -20,13 +20,16 @@ def news():
         news_data.append(datas['url'])
         news_data.append(datas['urlToImage'])
         url = datas['url']
-
         # newspaper로 크롤링
         news = Article(url, language='ko')
         news.download()
         news.parse()
-        news_data.append(summarize(news.text))
+        try:
+            news_data.append(summarize(news.text))
+        except:
+            news_data.append("none content")
+        news_data.append(news.publish_date)
 
-    news_data = np.array(news_data).reshape(int(len(news_data) / 5), 5)
+    news_data = np.array(news_data).reshape(int(len(news_data) / 6), 6)
     
     return news_data
