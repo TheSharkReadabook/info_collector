@@ -62,8 +62,9 @@
       <h5>파주시</h5>
 	  <br/>
 	{% for weather in weather %}
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-      <h3>Some Links</h3>
+      <p>{{ weather.category }}: {{ weather.fcstvalue }}</p>
+	{% endfor %}
+	{% for air in air %}
 	{% endfor %}
       <h2>Corona-19</h2>
 	  <br/>

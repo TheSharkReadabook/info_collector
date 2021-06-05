@@ -18,6 +18,6 @@ from django.urls import path, include
 # from infoweb import views
 
 urlpatterns = [
-    path('infoweb/', include('infoweb.urls')),
+    path('', include('infoweb.urls')),
     # path('admin/', admin.site.urls),
 ]

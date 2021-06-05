@@ -149,16 +149,22 @@ kakao oven에 디자인 프로토타입 만듬
 index.html
 news.title, news.content 불러옴
 
-
 corona19 일일 확진자는 (오늘 확진자 수 - 어제 확진자 수)
 
 news에 날짜도 올리기
 - ok
 
-weather, air는 지역별로, fcstvalue 확인하여 띄어줘야 함
-views.py에서 날짜 선택해서 쿼리할 수 있음
+weather, air 오늘 날짜만 올라오도록 함
+- ok
+
+fcstvalue 확인하여 띄어줘야 함
 
 데이터들은 최근 24시간 내 데이터만 올리도록 하고 중복 되지 않게 하기
+
+Mysql 오래된 데이터 자동 삭제하기
+
+[commit 메시지]
+https://blog.ull.im/engineering/2019/03/10/logs-on-git.html
 
 ======================================================
 [refactoring]
