@@ -145,11 +145,9 @@ news.py는 newspaper 모듈로 내용 scrap해서 gensim으로 요약하고 retu
 web design은 bootstrap등을 활용해서 디자인 시간 최소화 하기
 kakao oven에 디자인 프로토타입 만듬
 
-2020-06-04
+2021-06-04
 index.html
 news.title, news.content 불러옴
-
-corona19 일일 확진자는 (오늘 확진자 수 - 어제 확진자 수)
 
 news에 날짜도 올리기
 - ok
@@ -157,11 +155,17 @@ news에 날짜도 올리기
 weather, air 오늘 날짜만 올라오도록 함
 - ok
 
+데이터들은 최근 24시간 내 데이터만 올리도록 하고 중복 되지 않게 하기
+- ok
+
+
+2021-06-06
 fcstvalue 확인하여 띄어줘야 함
 
-데이터들은 최근 24시간 내 데이터만 올리도록 하고 중복 되지 않게 하기
-
 Mysql 오래된 데이터 자동 삭제하기
+- 테이블별로 crontab 하기
+
+corona19 일일 확진자는 (오늘 확진자 수 - 어제 확진자 수)
 
 [commit 메시지]
 https://blog.ull.im/engineering/2019/03/10/logs-on-git.html
@@ -173,6 +177,9 @@ SQL문 NOT NULL로 수정하고 NONE(NULL) 데이터는 Try - except 예외처�
 
 ======================================================
 참고 자료
+[mysql 오래된 데이터 삭제]
+https://ileeyj.tistory.com/194
+- weather 테이블의 경우 DELETE FROM weather WHERE baseDate < date_add(date_format( now() , '%Y-%m-%d'), interval -30 day);
 
 [공공데이터(XML, JSON)을 python으로 불러오기_기초]
 https://han-py.tistory.com/233

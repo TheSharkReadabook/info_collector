@@ -15,7 +15,9 @@
   <style>
 	img {
 	height: 200px;
+	width: auto;
 	background: #aaa;
+	margin-bottom: 10px;
 	}
 	  a {
 		 color: #000;
@@ -65,6 +67,8 @@
       <p>{{ weather.category }}: {{ weather.fcstvalue }}</p>
 	{% endfor %}
 	{% for air in air %}
+		<p>미세먼지(pm10): {{ air.pm10value }}</p>
+		<p>초미세먼지(pm2.5):{{ air.pm25value }}</p>
 	{% endfor %}
       <h2>Corona-19</h2>
 	  <br/>
@@ -97,7 +101,7 @@
 	  <a href={{ news.url }}>
 		  <h5>{{ news.title }}</h5>
 		  <h6>{{ news.date }}</h6>
-		  <img src={{ news.urlToImage }}>
+		  <img src={{ news.urltoimage }}>
 		  <!-- <p>Some text..</p> -->
 		  <p class='news'>{{ news.content }}</p>	
 		  <br/>
@@ -108,7 +112,10 @@
 </div>
 
 <div class="jumbotron text-center" style="margin-bottom:0">
-  <p>Footer</p>
+	Contect 
+	<h6>
+		efride710@gmail.com
+	</h6>
 </div>
 
 </body>

@@ -8,11 +8,11 @@ from pytz import timezone
 def index(request):
     today = datetime.now(timezone('Asia/Seoul')).strftime('%Y-%m-%d')
     print(today)
-    air = Air.objects.filter(datatime__contains=today)
+    air = Air.objects.filter(datatime__contains=today, citynameeng__contains='Gangnam-gu')
     print('[+]air: ',air)
     corona19 = Corona19.objects.filter(createdt__contains=today)
     print('[+]corona19: ',corona19)
-    news = News.objects.all()
+    news = News.objects.filter(date__contains=today)
     weather = Weather.objects.filter(basedate__contains=today)
     print('[+]weather: ', weather)
     context = {
