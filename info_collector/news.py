@@ -1,11 +1,10 @@
-import re
 import keys as key
 import requests
-from bs4 import BeautifulSoup
 from gensim.summarization.summarizer import summarize
 from newspaper import Article
 import numpy as np
 # import json
+
 
 def news():
     news_data = list()
@@ -31,5 +30,5 @@ def news():
         news_data.append(news.publish_date)
 
     news_data = np.array(news_data).reshape(int(len(news_data) / 6), 6)
-    
+
     return news_data
