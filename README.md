@@ -162,11 +162,16 @@ weather, air 오늘 날짜만 올라오도록 함
 2021-06-06
 fcstvalue 확인하여 띄어줘야 함
 
+corona19 일일 확진자는 (오늘 확진자 수 - 어제 확진자 수)
+API에서 불러와서 계산하여 Insert
+
 Mysql 오래된 데이터 자동 삭제하기
 - 테이블별로 crontab 하기
 
-corona19 일일 확진자는 (오늘 확진자 수 - 어제 확진자 수)
-API에서 불러와서 계산하여 Insert
+2021-06-07
+완성. 코로나 일일 확진자랑 fcstvalue만 해결 하면 끝
+
+나머지는 리눅스에서 contab으로 자동화 하면 됨
 
 [commit 메시지]
 https://blog.ull.im/engineering/2019/03/10/logs-on-git.html
