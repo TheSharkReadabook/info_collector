@@ -3,14 +3,16 @@
 from urllib.parse import urlencode, unquote, quote_plus
 import requests
 import numpy as np
-from tmp.current_time import KST_time
+from datetime import datetime
+from pytz import timezone
+
 
 import keys as key
 
 
 def weather():
     weather_data = list()
-    base_data = KST_time()
+    base_data = datetime.now(timezone('Asia/Seoul')).strftime('%Y%m%d')
     url = 'http://apis.data.go.kr/1360000/VilageFcstInfoService/getVilageFcst'
     queryParams = '?' + urlencode({quote_plus('ServiceKey'): key.auth_encode_key,
                                    quote_plus('pageNo'): '1',

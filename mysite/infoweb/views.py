@@ -1,8 +1,9 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+# from django.http import HttpResponse
 from .models import *
 from datetime import datetime
 from pytz import timezone
+
 
 # Create your views here.
 def index(request):
@@ -21,5 +22,5 @@ def index(request):
         'news': news,
         'weather': weather,
     }
-    
+
     return render(request, 'infoweb/index.html', context)

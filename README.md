@@ -166,6 +166,7 @@ Mysql 오래된 데이터 자동 삭제하기
 - 테이블별로 crontab 하기
 
 corona19 일일 확진자는 (오늘 확진자 수 - 어제 확진자 수)
+API에서 불러와서 계산하여 Insert
 
 [commit 메시지]
 https://blog.ull.im/engineering/2019/03/10/logs-on-git.html
