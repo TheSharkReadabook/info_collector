@@ -183,6 +183,11 @@ gcp vm instence에 배포해보기
 
 gcp GKE, SQL 등 사용해서 배포해보기
 
+정보들을 메일로 보내는 기능
+
+웹에 챗봇 기능 구현을 위한 Subproject - 실시간 채팅 channels 
+https://victorydntmd.tistory.com/261
+
 ======================================================
 [refactoring]
 
