@@ -169,12 +169,19 @@ Mysql 오래된 데이터 자동 삭제하기
 - 테이블별로 crontab 하기
 
 2021-06-07
-완성. 코로나 일일 확진자랑 fcstvalue만 해결 하면 끝
+코로나 일일 확진자랑 fcstvalue 해결 하기
 
-나머지는 리눅스에서 contab으로 자동화 하면 됨
+매일 데이터 갱신 리눅스에서 contab으로 자동화 하기
+
+지역별로 weather, air 데이터 어떻게 할건지 생각
 
 [commit 메시지]
 https://blog.ull.im/engineering/2019/03/10/logs-on-git.html
+
+2021-06-15
+gcp vm instence에 배포해보기
+
+gcp GKE, SQL 등 사용해서 배포해보기
 
 ======================================================
 [refactoring]
